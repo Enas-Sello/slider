@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.sliderContainer{
+    margin: 80px auto 0;
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.sliderContainer img{width: 480px;;
+position: absolute;
+opacity: 0;
+transition: opacity 1s;
+z-index: 1;}
+.sliderContainer img.active{opacity: 1;}
+
+.sliderControl{width: 800px;
+margin:80px auto;
+}
+.sliderControl span{    
+    background-color: #3f51b5;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+}
+.sliderControl  .disable {background-color: #3f51b56e;
+cursor:no-drop;}
